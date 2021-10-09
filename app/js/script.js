@@ -14,7 +14,8 @@ const services = [
     },
 ];
 
-const imgDiv = document.querySelector(".hero__image");
+const deskImg = document.querySelector("#desk-img");
+const mobileImg = document.querySelector("#mobile-img");
 const heading = document.querySelector("#heading");
 const paragraph = document.querySelector("#paragraph");
 const prevBtn = document.querySelector("#prevBtn");
@@ -26,10 +27,8 @@ const showService = (current) => {
     let service = services[current];
     heading.textContent = service.heading;
     paragraph.textContent = service.paragraph;
-    imgDiv.innerHTML = `<picture>
-            <source media="(min-width:640px)" srcset="images/desktop-image-hero-${service.id}.jpg">
-            <img src="images/mobile-image-hero-${service.id}.jpg" alt="hero-${service.id}">
-          </picture>`;
+    deskImg.srcset = `images/desktop-image-hero-${service.id}.jpg`;
+    mobileImg.src = `images/mobile-image-hero-${service.id}.jpg`;
 };
 
 prevBtn.addEventListener("click", () => {
