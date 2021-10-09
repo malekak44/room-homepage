@@ -25,4 +25,121 @@ body.noscroll {
 a {
   text-decoration: none;
 }
+
+.header nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 3.2rem 3.7rem;
+}
+
+.header__logo {
+  margin-top: 7px;
+  margin-right: 3.3rem;
+}
+
+.header__logo img {
+  width: 58px;
+}
+
+.header__links a {
+  color: white;
+  font-size: 11px;
+  text-transform: lowercase;
+}
+
+.header__links a:not(:last-child) {
+  margin-right: 1.85rem;
+}
+
+.hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__image {
+  flex: 1.36;
+  position: relative;
+}
+
+.hero__image img {
+  width: 100%;
+}
+
+.hero__text {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero__text__wrapper {
+  width: 68%;
+  margin-top: -36px;
+}
+
+.hero__text__wrapper h1 {
+  font-size: 37px;
+  line-height: 1.15;
+  font-weight: 600;
+  letter-spacing: -1px;
+  margin: 0;
+}
+
+.hero__text__wrapper p {
+  font-size: 11.5px;
+  color: #a1a1a1;
+  line-height: 1.7;
+  margin-top: 24px;
+}
+
+.hero__btn {
+  display: block;
+  color: black;
+  letter-spacing: 9px;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-top: 1.7rem;
+  display: flex;
+  align-items: center;
+}
+
+.hero__btn img {
+  margin-left: 28px;
+}
+
+.hero__buttons {
+  background: black;
+  height: 75px;
+  width: 150px;
+  position: absolute;
+  bottom: 1%;
+  right: 31.4%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.hero__buttons button {
+  flex: 1;
+  border: none;
+  background: black;
+  outline: none;
+  height: 100%;
+  cursor: pointer;
+}
+
+.hero__buttons button:hover {
+  background: #454545;
+}
+
+.hero__buttons button img {
+  width: 13px;
+}
 /*# sourceMappingURL=style.css.map */

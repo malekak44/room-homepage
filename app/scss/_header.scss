@@ -1,0 +1,29 @@
+.header {
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 3.2rem 3.7rem;
+    }
+
+    &__logo {
+        margin-top: 7px;
+        margin-right: 3.3rem;
+
+        img {
+            width: 58px;
+        }
+    }
+
+    &__links {
+        a {
+            color: $white;
+            font-size: 11px;
+            text-transform: lowercase;
+
+            &:not(:last-child) {
+                margin-right: 1.85rem;
+            }
+        }
+    }
+}
