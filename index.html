@@ -12,15 +12,21 @@
 <body>
   <header class="header">
     <nav>
+      <div class="overlay" class="hide-for-desktop"></div>
+      
+      <a id="btnHamburger" href="#" class="header__toggle hide-for-desktop">
+        <img id="menu-icon" src="images/icon-hamburger.svg" alt="btnHamburger">
+      </a>
+
       <a href="/" class="header__logo">
         <img src="images/logo.svg" alt="Room">
       </a>
-      <a id="btnHamburger" href="#" class="header__toggle hide-for-desktop">
-        <span></span>
-        <span></span>
-        <span></span>
-      </a>
+
       <div class="header__links hide-for-mobile">
+        <a href="#">Home</a><a href="#">Shop</a><a href="#">About</a><a href="#">Contact</a>
+      </div>
+
+      <div class="header__menu hide-for-desktop">
         <a href="#">Home</a><a href="#">Shop</a><a href="#">About</a><a href="#">Contact</a>
       </div>
     </nav>

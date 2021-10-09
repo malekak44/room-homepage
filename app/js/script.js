@@ -46,3 +46,19 @@ nextBtn.addEventListener("click", () => {
     }
     showService(currentItem);
 });
+
+// For Mobile Menu
+const nav = document.querySelector("nav");
+const btnHamburger = document.querySelector("#btnHamburger");
+const menuIcon = document.querySelector("#menu-icon");
+
+btnHamburger.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (nav.classList.contains("active")) {
+        menuIcon.src = "images/icon-hamburger.svg";
+        nav.classList.remove("active");
+    } else {
+        menuIcon.src = "images/icon-close.svg";
+        nav.classList.add("active");
+    }
+});

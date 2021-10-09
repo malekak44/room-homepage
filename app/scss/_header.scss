@@ -4,19 +4,77 @@
     left: 0;
     z-index: 1;
 
+    .overlay {
+        opacity: 1;
+        position: fixed;
+        top: 102px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background: rgba(0, 0, 0, 0.5);
+        visibility: hidden;
+    }
+
     nav {
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        padding: 3.2rem 3.7rem;
+        padding: 2.7rem 1.5rem 2.3rem;
+        width: 100vw;
+
+        @include breakpoint-up(large) {
+            width: auto;
+            padding: 3.2rem 3.7rem;
+        }
+
+        &.active {
+            background: $white;
+
+            .header__menu {
+                display: block;
+            }
+
+            .overlay {
+                visibility: visible;
+            }
+        }
+    }
+
+    &__toggle {
+        flex: 0.69;
     }
 
     &__logo {
-        margin-top: 7px;
-        margin-right: 3.3rem;
+        flex: 1;
+        margin-top: 0;
+        margin-right: 0;
 
         img {
-            width: 58px;
+            width: 62px;
+
+            @include breakpoint-up(large) {
+                width: 58px;
+            }
+        }
+
+        @include breakpoint-up(large) {
+            margin-top: 7px;
+            margin-right: 3.3rem;
+        }
+    }
+
+    &__menu {
+        display: none;
+
+        a {
+            font-size: 12px;
+            text-transform: lowercase;
+            color: black;
+            font-weight: 700;
+
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
         }
     }
 

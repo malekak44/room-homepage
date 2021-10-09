@@ -28,3 +28,19 @@ a {
 picture {
     line-height: 0;
 }
+
+.hide-for-desktop {
+    display: block;
+
+    @include breakpoint-up(large) {
+        display: none;
+    }
+}
+
+.hide-for-mobile {
+    display: none;
+
+    @include breakpoint-up(large) {
+        display: block;
+    }
+}
