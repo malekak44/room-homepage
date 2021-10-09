@@ -57,8 +57,10 @@ btnHamburger.addEventListener("click", (e) => {
     if (nav.classList.contains("active")) {
         menuIcon.src = "images/icon-hamburger.svg";
         nav.classList.remove("active");
+        document.body.classList.remove("noscroll");
     } else {
         menuIcon.src = "images/icon-close.svg";
         nav.classList.add("active");
+        document.body.classList.add("noscroll");
     }
 });
