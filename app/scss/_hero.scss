@@ -1,14 +1,10 @@
 .hero {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
     display: flex;
     align-items: center;
     justify-content: center;
 
     &__image {
-        flex: 1.36;
+        flex: 1.4;
         position: relative;
 
         img {
@@ -24,14 +20,14 @@
         flex-direction: column;
 
         &__wrapper {
-            width: 68%;
+            width: 67%;
             margin-top: -36px;
 
             h1 {
                 font-size: 37px;
                 line-height: 1.15;
                 font-weight: 600;
-                letter-spacing: -1px;
+                letter-spacing: -1.3px;
                 margin: 0;
             }
 
@@ -55,9 +51,21 @@
         display: flex;
         align-items: center;
 
-        img {
+        svg {
             margin-left: 28px;
         }
+
+        &:hover {
+            color: $darkGray;
+
+            svg {
+                path {
+                    fill: $darkGray;
+                }
+            }
+        }
+
+
     }
 
     &__buttons {
@@ -65,8 +73,8 @@
         height: 75px;
         width: 150px;
         position: absolute;
-        bottom: 1%;
-        right: 31.4%;
+        bottom: 20%;
+        right: 30.55%;
         display: flex;
         align-items: center;
         justify-content: space-around;
